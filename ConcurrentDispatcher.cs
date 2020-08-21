@@ -3,7 +3,7 @@ using System.Collections.Concurrent;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace pipeline_web_client
+namespace Default
 {
     public class ConcurrentDispatcher<T>
     {
