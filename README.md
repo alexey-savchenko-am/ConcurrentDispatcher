@@ -6,7 +6,7 @@ Put data which should be processed to dispatcher and specify handler.
 Example:
 
 ```
-ConcurrentDispatcher dispatcher = new ConcurrentDispatcher<int>();
+ConcurrentDispatcher<int> _dispatcher = new ConcurrentDispatcher<int>();
  
 public void DispatchItem()
 {
@@ -14,7 +14,7 @@ public void DispatchItem()
    Enumerable
        .Range(1, 100)
        .Select(x => Task.Run(
-          () => dispatcher.Dispatch(x, Handler)
+          () => _dispatcher.Dispatch(x, Handler)
         ));
             
 }
