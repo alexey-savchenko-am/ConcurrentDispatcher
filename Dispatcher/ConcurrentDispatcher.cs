@@ -26,13 +26,13 @@ namespace Dispatcher
         private volatile int _dispatcherCount = 0;
         
         
-        public void Dispatch(T obj, Func<T, Task> handler)
+        public void Dispatch(T item, Func<T, Task> handler)
         {
             var runningTmp = _running;
             
             Interlocked.Increment(ref _dispatcherCount);
             
-            _queue.Enqueue(new QueuedObject(obj, handler));
+            _queue.Enqueue(new QueuedObject(item, handler));
 
             if (Interlocked.CompareExchange(ref _running, 1, runningTmp) == 0)
             {
@@ -58,7 +58,7 @@ namespace Dispatcher
 
                 try
                 {
-                    queuedObj.Handler(queuedObj.Obj);
+                    queuedObj.Handler(queuedObj.Item);
                 }
                 finally
                 {
@@ -71,13 +71,13 @@ namespace Dispatcher
         
         class QueuedObject
         {
-            public QueuedObject(T obj, Func<T, Task> handler)
+            public QueuedObject(T item, Func<T, Task> handler)
             {
-                Obj = obj;
+                Item = item;
                 Handler = handler;
             }
 
-            internal T Obj { get; }
+            internal T Item { get; }
 
             internal Func<T, Task> Handler { get; }
         }

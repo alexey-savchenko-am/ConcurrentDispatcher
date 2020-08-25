@@ -1,0 +1,9 @@
+D:\Projects\concurrent-dispatcher\Dispatcher\bin\Debug\netstandard2.1\Dispatcher.deps.json
+D:\Projects\concurrent-dispatcher\Dispatcher\bin\Debug\netstandard2.1\Dispatcher.dll
+D:\Projects\concurrent-dispatcher\Dispatcher\bin\Debug\netstandard2.1\Dispatcher.pdb
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.csprojAssemblyReference.cache
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.AssemblyInfoInputs.cache
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.AssemblyInfo.cs
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.csproj.CoreCompileInputs.cache
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.dll
+D:\Projects\concurrent-dispatcher\Dispatcher\obj\Debug\netstandard2.1\Dispatcher.pdb
