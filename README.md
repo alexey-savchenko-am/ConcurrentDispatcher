@@ -5,7 +5,7 @@ Put data which should be processed to dispatcher and specify handler.
 
 Example:
 
-```
+```csharp
 ConcurrentDispatcher<int> _dispatcher = new ConcurrentDispatcher<int>();
  
 public void DispatchItem()
